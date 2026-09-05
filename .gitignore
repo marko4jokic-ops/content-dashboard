@@ -18,3 +18,6 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 .env*
+
+# ...but keep the template that documents which vars are needed
+!.env.local.example
