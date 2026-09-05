@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.content-dashboard.story-snapshot</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/marko4jokic/content-dashboard/scripts/story-snapshot.sh</string>
+  </array>
+
+  <!-- Every 2 hours, in seconds. -->
+  <key>StartInterval</key>
+  <integer>7200</integer>
+
+  <!-- Also run once immediately when the agent is loaded. -->
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/marko4jokic/content-dashboard/data/story-snapshot.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/marko4jokic/content-dashboard/data/story-snapshot.log</string>
+</dict>
+</plist>
